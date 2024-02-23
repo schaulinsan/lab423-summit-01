@@ -1,5 +1,6 @@
 {
   "mappings": [
-    "/content/lab423-summit-01-site/:/"
+    "/content/lab423-summit-01-site/:/",
+    "/content/lab423-summit-01-site.resource/authors.json:/authors.json"
   ]
 }
