@@ -1,6 +1,6 @@
 export default async function decorate(block) {
   const [quoteWrapper, authorWrapper] = block.children;
- 
+
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
@@ -12,9 +12,7 @@ export default async function decorate(block) {
     // get the returned json as javascript object
     quotees = await quotees.json();
     // find the first entry that's title matches our quotee
-    quotee = quotees.data.find(({ title }) => {
-      return title.toLowerCase() === quotee.toLowerCase();
-    })
+    quotee = quotees.data.find(({ title }) => title.toLowerCase() === quotee.toLowerCase());
     if (quotee) {
       const { path } = quotee;
       const a = document.createElement('a');
