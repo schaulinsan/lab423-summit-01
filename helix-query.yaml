@@ -2,9 +2,7 @@ version: 1
 indices:
   authors:
     include:
-      - /authors/**
-    exclude:
-      - /authors
+      - /authors/*
     target: /authors.json
     properties:
       lastModified:
