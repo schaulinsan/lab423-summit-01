@@ -237,6 +237,13 @@
       {
         "component": "text",
         "valueType": "string",
+        "name": "background_video",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
         "name": "foreground_pretitle",
         "label": "Pre Title",
         "multi": false
