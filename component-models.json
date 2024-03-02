@@ -271,6 +271,20 @@
         "name": "description",
         "label": "Description",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "label": "Link",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaText",
+        "label": "Link",
+        "multi": false
       }
     ]
   }
