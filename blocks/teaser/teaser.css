@@ -1,0 +1,50 @@
+.teaser {
+  display: grid;
+  position: relative;
+}
+
+.teaser > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.teaser .background p,
+.teaser .background img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.teaser .background img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.teaser .background::before {
+  display: block;
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(0deg, rgba(0 0 0 / 90%) 0%, rgba(0 0 0 / 50%) 66%, rgba(255 255 255 / 10%) 100%);
+}
+
+.teaser .foreground {
+  position: relative;
+  align-self: self-end;
+  color: white;
+  padding: 0 10px;
+}
+
+.teaser .foreground a {
+  margin: 0;
+}
+
+.teaser .foreground :where(p,h2,h3) {
+  margin: 10px 0;
+}
+
+.teaser .foreground .pretitle {
+  text-transform: uppercase;
+  font-size: .75em;
+}

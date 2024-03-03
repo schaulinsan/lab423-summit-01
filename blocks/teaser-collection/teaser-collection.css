@@ -1,0 +1,17 @@
+.teaser-collection {
+  display: flex;
+  flex-direction: row, wrap;
+  gap: 10px;
+}
+
+.teaser-collection .teaser {
+  max-width: calc(33.33% - 20px / 3);
+}
+
+.teaser-collection .teaser::after {
+  display: block;
+  grid-row: 1;
+  grid-column: 1;
+  content: "";
+  padding-top: 100%;
+}
