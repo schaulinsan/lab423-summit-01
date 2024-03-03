@@ -258,7 +258,7 @@
       {
         "component": "select",
         "name": "foreground_titleType",
-        "value": "h1",
+        "value": "h2",
         "label": "Title Type",
         "valueType": "string",
         "options": [
@@ -292,6 +292,32 @@
         "name": "foreground_ctaText",
         "label": "Link Text",
         "multi": false
+      }
+    ]
+  },
+  {
+    "id": "teaser-collection",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "List",
+            "value": "list"
+          },
+          {
+            "name": "Grid",
+            "value": "grid"
+          },
+          {
+            "name": "Carousel",
+            "value": "carousel"
+          }
+        ]
       }
     ]
   }

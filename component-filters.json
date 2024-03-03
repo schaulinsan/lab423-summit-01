@@ -30,13 +30,20 @@
       "columns",
       "quote",
       "listing",
-      "teaser"
+      "teaser",
+      "teaser-collection"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "teaser-collection",
+    "components": [
+      "teaser"
     ]
   }
 ]
